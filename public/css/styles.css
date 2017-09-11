@@ -1,0 +1,23 @@
+.tabs {
+  height: 200px;
+  position: relative; }
+  .tabs .tab[type='radio'] {
+    display: none;
+    position: absolute; }
+    .tabs .tab[type='radio']:focus + label {
+      outline: 2px dotted #000; }
+  .tabs .content {
+    bottom: 0;
+    height: 200px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 1em;
+    z-index: 0; }
+  .tabs [type=radio]:checked + label {
+    background: red; }
+  .tabs [type=radio]:checked + label + .content {
+    background: #add8e6;
+    z-index: 1; }
+
+/*# sourceMappingURL=styles.css.map */
